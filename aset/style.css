@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Akaya+Telivigala&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Quicksand:wght@400;700&display=swap');
+
+*{
+    font-family: 'Quicksand',sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    color: #1f1f1f;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.container{
+    margin: 0 3%;
+    padding: 0;
+}
+
+.card{
+    margin: 2%;
+    padding: 2%;
+    height: 500px;
+    background-color: white;
+    box-shadow: 0px 10px 40px 0 #e6e6e6;
+}
+
+header{
+    padding: 1%;
+    display: flex;
+    flex-direction:row;
+    /* background-color: blue; */
+}
+
+.sticky{
+    background-color: white;
+    top: 0;
+    position: sticky;
+    z-index: 1;
+}
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+}
+
+.nav-kesamping{
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    flex-basis: 25%;
+}
+
+ul, li, a{
+    margin: 20px;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    color: #1f1f1f;
+    /* background-color: blueviolet; */
+}
+
+a:hover{
+    font-weight: bold;
+}
+
+#logo{
+    font-family: "Akaya Telivigala";
+    font-weight: bold;
+    font-size: 40px;
+    flex-basis: 70%;
+}
+
+main{
+    margin: auto;
+}
+
+#beranda{
+    display: flex;
+    flex-direction:row;
+    margin: auto;
+    width: 100%;
+    height: fit-content;
+}
+
+.welcome{
+    background-color: #f6f5f5;
+    margin: 0;
+    padding: 0 0 0 5%;
+    flex-basis: 40%;
+    letter-spacing: 1px;
+}
+
+.objek-tengah{
+    margin: 0;
+    width: 75%;
+    position: relative;
+    top: 47%;
+    transform: translate(0,-50%);
+}
+
+.font-size1{
+    margin: 0;
+    font-family: "Libre Baskerville";
+    font-size: 46px;
+    font-weight: bold;
+    line-height: 60px;
+}
+
+.font-size2{
+    margin: 35px 0;
+    font-size: 23px;
+    line-height: 35px;
+}
+
+.font-normal{
+    font-size: 16px;
+    line-height: 25px;
+}
+
+.btn{
+    border-style: none;
+    letter-spacing: 1px;
+}
+
+.pesan-sekarang{
+    margin-top: 10%;
+    padding: 4%;
+    background-color: #1f1f1f;
+    color: white;
+    border-radius: 100px;
+}
+
+.cnth-produk{
+    display: flex;
+    flex-basis: 60%;
+    position: relative;
+}
+
+#gbr-contoh{
+    margin: 0;
+    width: 100%;
+    height: 720px;
+}
+
+#ganti-gbr-contoh{
+    position: absolute;
+    padding: 2%;
+    background-color: rgba(255, 255, 255, .15);
+    backdrop-filter: blur(5px);
+    top: 80%;
+    left: 30%;
+}
+
+.gnt-img{
+    margin: 5px;
+    height: 80px;
+}
+
+.gnt-img:hover{
+    box-shadow: 0 2px 20px white;
+}
+
+#unggulan{
+    margin: 5% 0;
+    position: relative;
+}
+
+.list-unggulan{
+    display: flex;
+}
+
+.img-unggulan{
+    height: 250px;
+}
+
+#tentang{
+    margin: 5% 0;
+}
+
+#profilku{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#fp{
+    clip-path: circle();
+    width: 250px;
+    display: flex;
+}
+
+footer{
+    margin: 0;
+    padding: 2%;
+    background-color: #1f1f1f;
+    color: white;
+    text-align: center;
+}
+
+@media screen and (max-width:375px){
+    #logo{
+        font-size: 20px;
+        flex-basis: 30%;
+    }
+
+    .nav-kesamping{
+        font-size: 12px;
+        flex-basis: 30%;
+    }
+
+    ul, li, a{
+        margin: 4px;
+    }
+
+    #beranda{
+        flex-direction:column;
+    }
+
+    .welcome{
+        background-color: white;
+        height: 120px;
+        width: 90%;
+        flex-basis: 10%;
+    }
+
+    .objek-tengah{
+        margin: 0;
+        width: 100%;
+        height: 200px;
+        top: 120px;
+    }
+
+    .font-size1{
+        font-size: 23px;
+        line-height: 35px;
+    }
+    
+    .font-size2{
+        margin: 5px 0;
+        font-size: 16px;
+        line-height: 25px;
+    }
+    
+    .font-normal{
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    .pesan-sekarang{
+        margin: 10px 0;
+        padding: 4%;
+        background-color: #1f1f1f;
+        color: white;
+        border-radius: 100px;
+    }
+
+    .cnth-produk{
+        margin: 10px 0;
+        display: flex;
+        flex-basis: 60%;
+        position: relative;
+    }
+    
+    #gbr-contoh{
+        margin: 80px 0 0 0;
+        height: 220px;
+    }
+    
+    #ganti-gbr-contoh{
+        display: flex;
+        flex-direction: row;
+        top: 75%;
+        left: 14%;
+    }
+
+    .card{
+        padding: 20px;
+        flex-basis: 35%;
+    }
+    
+    .gnt-img{
+        margin: 5px;
+        height: 45px;
+    }
+    
+    .list-unggulan{
+        flex-direction: column;
+    }
+
+    .img-unggulan{
+        height: 180px;
+    }
+
+    #fp{
+        width: 120px;
+    }
+}
